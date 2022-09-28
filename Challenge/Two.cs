@@ -1,0 +1,26 @@
+using System;
+using System.Linq; 
+using System.IO; 
+
+class Program 
+{
+    static void Main(string[] args) 
+    {
+        int qt = int.Parse(Console.ReadLine()); 
+        string[] v = new string[2]; 
+
+        for(int i = 0; i < qt; i++) 
+        {
+            v = Console.ReadLine().Split(" ");
+            string a = v[0]; 
+            string b = v[1]; 
+
+            if(b.Length > a.Length)
+            Console.WriteLine("fit"); 
+            else if(a.EndsWith(b))
+            Console.WriteLine("does not fit");
+            else
+            Console.WriteLine("fit");
+        }
+    }
+}
