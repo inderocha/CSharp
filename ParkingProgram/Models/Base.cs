@@ -20,6 +20,8 @@ namespace Base.Models
         public void AddVehicles()
         {
             Console.WriteLine("Enter vehicle license plate to park:"); 
+            Console.ReadLine(); 
+            vehicles.Add(""); 
         }
 
         public void DeleteVehicles()
