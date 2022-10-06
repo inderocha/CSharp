@@ -1,9 +1,4 @@
-using System;
-using System.Linq; 
-using System.IO; 
-using Base.Models; 
-
-Console.OutputEncoding = System.Text.Encoding.UTF8; 
+using Parking.Models; 
 
 decimal initialValue = 0; 
 decimal valuePerHour = 0; 
@@ -16,7 +11,7 @@ Console.WriteLine("Now enter the hourly price:");
 
 valuePerHour = Convert.ToDecimal(Console.ReadLine()); 
 
-Parking pk = new Parking(initialValue, valuePerHour); 
+Park pk = new Park(initialValue, valuePerHour); 
 
 string option = string.Empty; 
 bool displayMenu = true; 
